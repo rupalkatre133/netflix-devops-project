@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: red;
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    margin-top: 200px;
+}
