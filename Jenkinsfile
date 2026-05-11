@@ -13,7 +13,7 @@ pipeline {
 
             steps {
 
-                git 'https://github.com/yourusername/netflix-devops-project.git'
+                git 'https://github.com/rupalkatre133/netflix-devops-project.git'
             }
         }
 
