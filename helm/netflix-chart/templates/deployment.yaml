@@ -1,1 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
 
+metadata:
+  name: netflix-deployment
+
+spec:
+
+  replicas: {{ .Values.replicaCount }}
+
+  selector:
+    matchLabels:
+      app: netflix
+
+  template:
+
+    metadata:
+      labels:
+        app: netflix
+
+    spec:
+
+      containers:
+      - name: netflix-container
+
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+
+        ports:
+        - containerPort: 80
