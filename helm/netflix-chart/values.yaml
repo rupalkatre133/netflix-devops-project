@@ -1,1 +1,9 @@
+replicaCount: 2
 
+image:
+  repository: yourdockerhubusername/netflix-clone
+  tag: v1
+
+service:
+  type: LoadBalancer
+  port: 80
