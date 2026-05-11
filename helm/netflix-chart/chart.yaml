@@ -1,1 +1,9 @@
+apiVersion: v2
 
+name: netflix-chart
+
+description: Netflix DevOps Project
+
+version: 0.1.0
+
+appVersion: "1.0"
